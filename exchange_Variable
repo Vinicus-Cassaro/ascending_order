@@ -1,0 +1,50 @@
+#include<stdio.h>
+
+
+main()
+{
+	int num1,num2,num3,num4,change,ctrl;
+ 
+	printf("Enter four numbers that will be sorted in ascending order.\n");
+	printf("\nThe first number: ");
+	scanf("%d",&num1);
+	printf("\nThe second number: ");
+	scanf("%d",&num2);
+	printf("\nThe Third number: ");
+	scanf("%d",&num3);
+	printf("\nThe Fourth number: ");
+	scanf("%d",&num4);
+	getchar();
+ 
+    ctrl = 1;
+	while(ctrl==1)
+	{
+		ctrl = 0; 
+		if(num1>num2)
+		{
+			change = num1;
+			num1 = num2;
+			num2 = change;
+			ctrl = 1; 
+		}
+		if(num2>num3)
+		{
+			change = num2;
+			num2 = num3;
+			num3 = change;
+			ctrl = 1; 
+		}
+		if(num3>num4)
+		{
+			change = num3;
+			num3 = num4;
+			num4 = change;
+			ctrl = 1;
+		}
+     
+	}
+	printf("\nAscending order: %d,%d,%d,%d\n", num1,num2,num3,num4);
+
+	printf("\nTo close, press any key...");
+	getchar();
+}
