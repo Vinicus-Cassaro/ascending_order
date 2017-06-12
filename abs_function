@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include<stdlib.h>
+main()
+{
+	int num1,num2,num3,num4,bigger;
+	printf("Enter four numbers that will be sorted in ascending order, one after another.\n");
+	printf("\nThe first number: ");
+	scanf("%d",&num1);
+	printf("\nThe second number: ");
+	scanf("%d",&num2);
+	printf("\nThe Third number: ");
+	scanf("%d",&num3);
+	printf("\nThe Fourth number: ");
+	scanf("%d",&num4);
+		
+		bigger = (num1+num2+abs(num1-num2))/2;
+		num2=num1+num2-bigger;//smaller
+		num1=bigger;
+		
+		bigger = (num3+num4+abs(num3-num4))/2;
+		num4=num3+num4-bigger;//smaller
+		num3=num2;
+		num2=bigger;
+		
+		bigger = (num1+num2+abs(num1-num2))/2;
+		num2=num1+num2-bigger;//smaller
+		num1=bigger;
+		
+		bigger = (num3+num4+abs(num3-num4))/2;
+		num4=num3+num4-bigger;//smaller
+		num3=bigger;
+		
+		bigger = (num2+num3+abs(num2-num3))/2;
+		num3=num2+num3-bigger;//smaller
+		num2=bigger;		
+	printf("\nAscending order: %d,%d,%d,%d\n", num4,num3,num2,num1);
+  printf("\nTo close, press any key...");
+	getchar();
+}
