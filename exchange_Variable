@@ -14,9 +14,8 @@ main()
 	scanf("%d",&num3);
 	printf("\nThe Fourth number: ");
 	scanf("%d",&num4);
-	getchar();
  
-    ctrl = 1;
+ 	ctrl = 1;
 	while(ctrl==1)
 	{
 		ctrl = 0; 
