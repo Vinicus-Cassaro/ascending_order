@@ -5,7 +5,7 @@ main()
 {
 	int num1,num2,num3,num4,change,ctrl;
  
-	printf("Enter four numbers that will be sorted in ascending order.\n");
+	printf("Enter four numbers that will be sorted in ascending order, one after another.\n");
 	printf("\nThe first number: ");
 	scanf("%d",&num1);
 	printf("\nThe second number: ");
